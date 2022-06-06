@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:sampleproject/pages/Home_page.dart';
@@ -7,9 +6,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sampleproject/utitily/routes.dart';
 
 void main() {
-  runApp(myapp());
+  runApp(const myapp());
 }
 
+// ignore: camel_case_types
 class myapp extends StatelessWidget {
   const myapp({Key? key}) : super(key: key);
 
@@ -27,8 +27,8 @@ class myapp extends StatelessWidget {
         ),
 
         routes: {
-          MyRoutes.loginRoute :(context) => LoginPage(),
-          MyRoutes.homeRoute:(context) => homePage(),
+          MyRoutes.loginRoute :(context) => const LoginPage(),
+          MyRoutes.homeRoute:(context) => const homePage(),
           
         }, 
 );
