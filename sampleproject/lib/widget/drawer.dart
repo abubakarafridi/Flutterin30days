@@ -7,15 +7,16 @@ class mydrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final imageUrl =
+    const imageUrl =
         "https://upload.wikimedia.org/wikipedia/commons/e/e4/Linus_Sebastian_Screenshot_From_Youtube_August_5_2013.png";
     return Drawer(
       child: Container(
         color: Colors.deepPurple,
         child: ListView(
           padding: EdgeInsets.zero,
+          // ignore: prefer_const_literals_to_create_immutables
           children: [
-            DrawerHeader(
+            const DrawerHeader(
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
                 margin: EdgeInsets.zero,
@@ -26,21 +27,21 @@ class mydrawer extends StatelessWidget {
                 ),
               ),
             ),
-            ListTile(
+            const ListTile(
              leading: Icon(CupertinoIcons.home,color: Colors.white,),
              
              title: Text("Home",textScaleFactor: 1.2,
             style: TextStyle(color: Colors.white ),
              ),
             ),
-          ListTile(
+          const ListTile(
              leading: Icon(CupertinoIcons.profile_circled,color: Colors.white,),
              
              title: Text("Profile",textScaleFactor: 1.2,
             style: TextStyle(color: Colors.white ),
              ),
             ),
-            ListTile(
+            const ListTile(
              leading: Icon(CupertinoIcons.mail,color: Colors.white,),
              
              title: Text("Email",textScaleFactor: 1.2,
