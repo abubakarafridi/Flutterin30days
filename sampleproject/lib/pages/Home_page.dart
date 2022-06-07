@@ -1,7 +1,10 @@
 // ignore_for_file: file_names
 
-import'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import 'package:sampleproject/models/catalogapp.dart';
 import 'package:sampleproject/widget/drawer.dart';
+
+import '../widget/item_widget.dart';
 
 // ignore: camel_case_types
 class homePage extends StatelessWidget {
@@ -12,12 +15,21 @@ class homePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dummylist = List.generate(10, (index) => CatalogModel.items[0]);
     return Scaffold(
-      appBar: AppBar( 
+      appBar: AppBar(
         title: const Text("Catalog App"),
       ),
-      body: Center(
-        child: Text('Welcome $days to flutter by $name'),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: ListView.builder(
+          itemCount: dummylist.length,
+          itemBuilder: (context, index) {
+            return ItemWidget(
+              item: dummylist[index],
+            );
+          },
+        ),
       ),
       drawer: mydrawer(),
     );
