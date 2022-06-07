@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:sampleproject/pages/Home_page.dart';
 import 'package:sampleproject/pages/login_page.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:sampleproject/utitily/routes.dart';
 import 'package:sampleproject/widget/themes.dart';
 
@@ -22,7 +21,7 @@ class myapp extends StatelessWidget {
 
     return MaterialApp(
       themeMode: ThemeMode.light,
-      theme: MyTheme.lightTheme(),
+      theme: MyTheme.lightTheme(context),
 
         
       darkTheme: MyTheme.darkTheme(context),
