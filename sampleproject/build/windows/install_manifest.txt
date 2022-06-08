@@ -1,6 +1,7 @@
 D:/dev/sampleproject/build/windows/runner/Debug/data/icudtl.dat
 D:/dev/sampleproject/build/windows/runner/Debug/flutter_windows.dll
 D:/dev/sampleproject/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+D:/dev/sampleproject/build/windows/runner/Debug/data/flutter_assets/assets/files/Catalog.json
 D:/dev/sampleproject/build/windows/runner/Debug/data/flutter_assets/assets/images/login_image.png
 D:/dev/sampleproject/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
 D:/dev/sampleproject/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
