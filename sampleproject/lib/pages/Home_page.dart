@@ -1,12 +1,10 @@
 // ignore_for_file: file_names
 
-import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
 import 'package:sampleproject/models/catalogapp.dart';
-import 'package:sampleproject/widget/drawer.dart';
 import 'package:sampleproject/widget/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 import '../widget/item_widget.dart';
@@ -56,9 +54,8 @@ class _homePageState extends State<homePage> {
                 if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
                   CatalogList().expand()
                 else
-                  Center(
-                    child: CircularProgressIndicator(),
-                  )
+                  
+                  CircularProgressIndicator().centered().py16().expand(),                  
               ],
             ),
           ),
