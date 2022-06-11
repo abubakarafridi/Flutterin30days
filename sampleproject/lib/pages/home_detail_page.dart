@@ -16,9 +16,9 @@ class HomeDetailpage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
       ),
-      backgroundColor: MyTheme.whiteishtColor,
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
@@ -28,7 +28,7 @@ class HomeDetailpage extends StatelessWidget {
               onPressed: () {},
               style: ButtonStyle(
                 backgroundColor:
-                    MaterialStateProperty.all(MyTheme.darkbluishColor),
+                    MaterialStateProperty.all(context.theme.buttonColor),
                 shape: MaterialStateProperty.all(
                   StadiumBorder(),
                 ),
@@ -51,11 +51,11 @@ class HomeDetailpage extends StatelessWidget {
               arcType: VxArcType.CONVEY,
               edge: VxEdge.TOP,
               child: Container(
-                color: Colors.white,
+                color: context.cardColor,
                 width: context.screenWidth,
                 child: Column(
                   children: [
-                    catalog.name.text.xl4.color(MyTheme.darkbluishColor).make(),
+                    catalog.name.text.xl4.color(context.accentColor).make(),
                     catalog.desc.text.textStyle(context.captionStyle).xl.make(),
                     10.heightBox,
                     "Amet erat nonumy sanctus ea dolore eirmod et, stet eirmod nonumy eos elitr sed takimata justo, kasd eirmod aliquyam et ut sea. Stet ipsum elitr magna consetetur et ipsum. Sit amet clita voluptua sanctus dolore, stet eirmod ut et sit dolore est sed. Amet vero eirmod vero sit ipsum sanctus.Est lorem amet invidunt amet sed justo sadipscing accusam et lorem. Nonumy clita ut gubergren takimata elitr, dolor ut dolor diam et ea voluptua, ea et est ut clita, dolore diam sit et takimata consetetur aliquyam et dolor vero. Accusam justo et et dolore eirmod, justo stet et dolor et accusam dolores gubergren sit et. Et stet eos dolor erat ut invidunt. Amet aliquyam diam clita vero sit. Ipsum aliquyam diam et amet eirmod et erat invidunt dolore. Magna eirmod sed ea sed amet, lorem sit dolore invidunt elitr ea amet nonumy ea, stet sed dolor eirmod sit. Aliquyam rebum.".text.textStyle(context.captionStyle).make().p20()
