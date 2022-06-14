@@ -1,8 +1,9 @@
+
 import 'package:sampleproject/models/Cart.dart';
 import 'package:sampleproject/models/catalogapp.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class myStore extends VxStore {
+class MyStore extends VxStore {
   late CatalogModel catalog;
   late CartModel cart;
 
